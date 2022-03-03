@@ -1,4 +1,4 @@
-# Footprinting and Reconnaissance
+# Scanning
 
 ## Footprinting Through Search Engine
 
