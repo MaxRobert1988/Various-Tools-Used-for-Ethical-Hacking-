@@ -7,3 +7,4 @@ I plan on keeping this repo updated thoughout my journey in this vast field of c
 List of Topics Included
 1. Web Server Footprinting
 2. Footprininting and Reconnaissance
+3. Scanning
