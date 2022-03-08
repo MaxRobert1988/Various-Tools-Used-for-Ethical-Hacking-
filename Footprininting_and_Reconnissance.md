@@ -19,6 +19,7 @@
 		* '*' Operator
 			* site:*.in
 3. Reverse Google Image Search
+	* **https://citizenevidence.amnestyusa.org/ **
 4. FTP Search Engine - Napalm
 5. IoT Search Engine - Shodan
 
