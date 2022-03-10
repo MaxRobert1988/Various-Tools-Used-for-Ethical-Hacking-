@@ -8,3 +8,4 @@ List of Topics Included
 1. Web Server Footprinting
 2. Footprininting and Reconnaissance
 3. Scanning
+4. Enumeration
