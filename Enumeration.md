@@ -1,8 +1,8 @@
 # Enumeration
 
-## Perform NetBIOS enumeration
+## NetBIOS enumeration
 
-### Perform NetBIOS enumeration using Windows command-line utilities
+### NetBIOS enumeration using Windows command-line utilities
 ```
 nbtstat -a IP
 ```
@@ -15,17 +15,17 @@ To display information about the target such as connection status, shared folder
 net use
 ```
 	
-### Perform NetBIOS enumeration using NetBIOS Enumerator (Windows)
+### NetBIOS enumeration using NetBIOS Enumerator (Windows)
 
 
-### Perform NetBIOS enumeration using an NSE Script
+### NetBIOS enumeration using an NSE Script
 ```
 nmap -sV --script nbstat.nse Target
 ```
 
-## Perform SNMP enumeration
+## SNMP enumeration
 
-### Perform SNMP enumeration using snmp-check
+### SNMP enumeration using snmp-check
 
 To check if a port is filtered 
 ```
@@ -35,7 +35,7 @@ The snmp-check command enumerates the target machine, listing sensitive informat
 ```
 snmp-check Traget
 ```
-### Perform SNMP enumeration using SoftPerfect Network Scanner (Windows)
+### SNMP enumeration using SoftPerfect Network Scanner (Windows)
 
 * Steps to Follow
 	* Options
@@ -44,14 +44,14 @@ snmp-check Traget
 	* enter an IP range 
 	* Start Scan
 
-## Perform LDAP enumeration
+## LDAP enumeration
 
-### Perform LDAP enumeration using Active Directory Explorer (AD Explorer) (Windows)
+### LDAP enumeration using Active Directory Explorer (AD Explorer) (Windows)
 
 
-## Perform NFS enumeration
+## NFS enumeration
 
-### Perform NFS enumeration using RPCScan and SuperEnum
+### NFS enumeration using RPCScan and SuperEnum
 
 ```
 cd SuperEnum
@@ -66,9 +66,9 @@ Let it run
 cd RPCScan
 python3 rpc-scan.py Target --rpc
 ```
-## Perform DNS enumeration
+## DNS enumeration
 
-### Perform DNS enumeration using zone transfer
+### DNS enumeration using zone transfer
 
 ```
 dig ns IP
@@ -81,16 +81,16 @@ target domain
 ls -d nameserver
 ```
 
-### Perform DNS enumeration using DNSSEC zone walking
+### DNS enumeration using DNSSEC zone walking
 
 ```
 dnsrecon -h
 dnsrecon -d domain -z
 ```
 
-## Perform RPC, SMB, and FTP enumeration
+## RPC, SMB, and FTP enumeration
 
-### Perform RPC and SMB enumeration using NetScanTools Pro
+### RPC and SMB enumeration using NetScanTools Pro
 
 * Manual Tools (all)
 	* nix RPC Info
@@ -111,13 +111,13 @@ dnsrecon -d domain -z
 	* view shares
 
 
-### Perform RPC, SMB, and FTP enumeration using Nmap
+### RPC, SMB, and FTP enumeration using Nmap
 
 ```
 nmap -T4 -A Target
 ```
 
-## Perform enumeration using various enumeration tools
+## Enumeration using various enumeration tools
 
 ### Enumerate information using Global Network Inventory
 
