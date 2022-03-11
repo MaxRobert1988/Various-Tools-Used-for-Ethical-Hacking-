@@ -9,3 +9,4 @@ List of Topics Included
 2. Footprininting and Reconnaissance
 3. Scanning
 4. Enumeration
+5. Vulnerability Assessment
