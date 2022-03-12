@@ -11,6 +11,7 @@ List of Topics Included
 4. Enumeration
 5. Vulnerability Assessment
 6. DoS/DDoS
+7. Social Engineering
 
 
 
