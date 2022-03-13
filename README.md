@@ -14,6 +14,7 @@ List of Topics Included
 7. Social Engineering
 8. Session Hijacking
 9. Evading IPS IDS Firewall
+10. Hacking Wireless Networks
 
 
 
