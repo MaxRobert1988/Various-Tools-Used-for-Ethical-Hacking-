@@ -13,6 +13,7 @@ List of Topics Included
 6. DoS/DDoS
 7. Social Engineering
 8. Session Hijacking
+9. Evading IPS IDS Firewall
 
 
 
