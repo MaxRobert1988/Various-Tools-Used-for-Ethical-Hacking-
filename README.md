@@ -12,6 +12,7 @@ List of Topics Included
 5. Vulnerability Assessment
 6. DoS/DDoS
 7. Social Engineering
+8. Session Hijacking
 
 
 
