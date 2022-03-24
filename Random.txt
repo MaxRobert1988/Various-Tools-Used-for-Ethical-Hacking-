@@ -1,0 +1,131 @@
+ceh123
+qwerty@123
+
+Admin
+Pa$$w0rd
+
+Jason
+qwerty
+
+2 Footprinting and Reconnaissance
+3 Scanning
+4 Enumeration
+5 Vulnerability Assessment
+6 System Hacking
+7 Malware Threats
+8 Sniffing
+9 Social Engineering
+10 DoS
+11 Session Hijacking
+12 Evading IPS,IDS, Firewall
+13 Hacking Web Servers
+14 Hacking Web Applications
+15 SQL Injection
+16 Hacking Wireless Networks
+17 Hacking Mobile Applications
+18 IOT, OT Hacking
+19 Cloud Computing
+20 Cryptography
+
+
+
+
+Steps to Follow
+Simple Login
+intercepted the retrive request
+got the javascript validation 
+decoded that and submitted it
+
+Secure Shell
+download sysadmin .ssh id_rsa convert to rsa by openssh cmd
+ssh-keygen -p -N "" -m pem -f /path/to/key
+BOOM
+
+
+
+
+
+
+enumerate and brutefoce windwos server 2016 ftp using hydra
+
+Ask about reverse shell on dvwa
+-------------------------------------------------
+fill in the blanks and mcqs
+
+pcap file - wireshark 
+Sniff the login credentials in the packets
+1. frame contains pwd
+2. http.request.method=='POST'
+     Apply filters
+
+pcap file DOS/DDOS IPs
+Statistics -> ip v4 Statistics -> Source and destination address
+
+File is encrypted, decrypt the file with tool, pin acquired
+
+SQL Injection 
+extract login user credentials
+
+wordpress website
+bruteforce the password using wpscan 
+wpscan --url url --enumerate u
+or use burpsuite intruder
+
+dvwa - file upload vulnerability
+generate payload file and upalod
+get reverse shell using msfconsole
+do some tasks
+
+dvwa - input field
+exploit any vulnerability and find a file
+find pin and boom
+
+Find all machines in network and ips
+which machine is running ftp service
+hydra to bruteforce the credentials of ftp server
+extract the file and get and read contents
+if encrypted, decrypt it using tool
+
+Steganography
+extract hidden file using snow/openstego
+To encrypt
+snow -C -m "hidden msg" -p password infile outputfile
+To decrypt the hidden message:                                             snow -C -p "OpenSesame" outfile     
+
+Veracrypt
+
+john to crack hash passwords
+rainbow crack
+john --format=NT hash.txt --wordlist=path
+parameter tampering
+
+Android ADB Connect freeciv
+
+
+blah';insert into login values ('john','apple123'); -- 
+
+-------------------------------------------------
+nmap
+hydra
+whatweb
+sqlmap
+wpscan
+burpsuite
+wireshark
+johntheripper
+--------------------------------------------------
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+
+service apache2 start
+--------------------------------------------------
+places -> ceh-tools on 10.10.10.10
+if not present then,
+Places -> Network -> ctrl + L -> smb://10.10.10.10
+
+------------
+Steganography lab
+
+
+Reverse shell on dvwa
